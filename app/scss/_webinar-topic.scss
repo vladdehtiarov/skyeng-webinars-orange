@@ -1,0 +1,127 @@
+// Webinar topic styles
+
+.webinar-topic {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+
+    @include responsive(desktop) {
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-starts;
+    }
+
+    // title
+    &__title {
+        width: 100%;
+        max-width: 250px;
+        margin-top: 105px;
+        font-weight: normal;
+        font-size: 40px;
+        line-height: 100%;
+        color: $black;
+
+        @include responsive(desktop) {
+            max-width: 660px;
+            margin-top: 36px;
+            font-size: 80px;
+        }
+    }
+
+    // Img box
+    &__img-box {
+
+        &_rect {
+            @include responsive(desktop) {
+                height: 475px;
+                margin-top: -58px;
+                margin-right: -32px;
+            }
+        }
+
+        &_circle {
+            @include responsive(desktop) {
+                height: 480px;
+                margin-top: -58px;
+                margin-right: 65px;
+            }
+        }
+
+        @include responsive(desktop) {
+            width: auto;
+            position: relative;
+        }
+        
+    }
+
+    // Image
+    .img-box__image {
+        display: none;
+
+        @include responsive(desktop) {
+            display: block;
+            border: 12px solid $white;       
+            transform: rotate(-4.21deg);
+
+            &_rect {
+                @include coverPicture(460px, 310px);
+                border-radius: 16px;
+            }
+    
+            &_circle {
+                @include coverPicture(376px, 376px);
+                border-radius: 50%;
+                transform: rotate(0deg);
+                position: relative;
+
+                img {
+                    position: absolute;
+                    top: 50%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+        
+        
+    }
+
+    // Sticker
+    .img-box__sticker {
+        @include boxSize(315px, 167px);
+        @include coverBgImg('../images/stickers/free-webinar.png');
+        position: absolute;
+
+        @include responsive(desktop) {
+            @include boxSize(508px, 269px);
+        }
+        
+        
+    }
+
+    .img-box__image_rect + .img-box__sticker {
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include responsive(desktop) {
+            top: auto;
+            left: -133px;
+            bottom: 0;
+            transform: translateX(0);
+        }
+    }
+
+    .img-box__image_circle + .img-box__sticker {
+        top: 8px;
+        left: 50%;
+        transform: translateX(-50%);
+
+        @include responsive(desktop) {
+            top: auto;
+            left: -121px;
+            bottom: 0;
+            transform: translateX(0);
+        }
+    }
+}

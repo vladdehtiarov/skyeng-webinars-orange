@@ -1,0 +1,52 @@
+.sticer {
+    
+    &--sticker-1 {
+        background-image: url(../images/stickers-assets/Numbers/sticker-1.svg);
+    }
+
+    &--sticker-2 {
+        background-image: url(../images/stickers-assets/Numbers/sticker-2.svg);
+    }
+
+    &--sticker-3 {
+        background-image: url(../images/stickers-assets/Numbers/sticker-3.svg);
+    }
+
+    &--sticker-4 {
+        background-image: url(../images/stickers-assets/Numbers/sticker-4.svg);
+    }
+
+
+    width: 100px;
+    height: 100px;
+    position: relative;
+    display: inline-block;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+
+    &_mobile {
+        width: 100px;
+        height: 100px;
+    }
+
+    &_desctop {
+        width: 180px;
+        height: 180px;
+    }
+
+}
+
+.sticer--only-desctop {
+    .sticer_mobile {
+        width: 180px;
+        height: 180px;
+    }
+}
+
+.sticer--only-mobile {
+    .sticer_desctop {
+        width: 100px;
+        height: 100px;
+    }
+}

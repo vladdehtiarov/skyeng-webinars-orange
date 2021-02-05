@@ -1,0 +1,71 @@
+// Sorting section
+
+.sorting-section {
+    margin: 32px 0 15px 0;
+    width: 100%;
+    @include responsive(desktop) {
+        margin: 72px 0;
+    }
+
+    &__inner {
+        width: 100%;
+        @include responsive(desktop) {
+           width: 90%;
+        }
+    }
+
+    &__item {
+        display: inline-block;
+        margin: 6px 4px;
+        @include responsive(desktop) {
+            margin: 8px 8px;
+        }
+    }
+
+    &__item:first-child {
+        margin-left: 0;
+    }
+
+    &__item:last-child {
+        margin-right: 0;
+    }
+
+    &__item:nth-child(7) {
+        margin-left: 0;
+    }
+
+    // Custom input styles
+    &__custom-inp {
+        display: inline-block;
+        padding: 6px 24px;
+        background-color: $white;
+        border-radius: 10px;
+        font-size: 18px;
+        line-height: 32px;
+        letter-spacing: -0.05px;
+        color: rgba($black, 0.24);
+        cursor: pointer;
+        transition: all 0.2s ease-in;
+        @include responsive(desktop) {
+            padding: 15px 28px;
+            font-size: 24px;
+        }
+    }
+
+    &__custom-inp:hover {
+        background-color: $blue_2;
+    }
+
+    &__item {
+        // hide default input styles
+        input[type="checkbox"] {
+            display: none;
+            outline: none;
+        }
+        
+        input[type="checkbox"]:checked + .sorting-section__custom-inp {
+            background-color: $blue_btn;
+            color: $white;
+        }
+    }
+}

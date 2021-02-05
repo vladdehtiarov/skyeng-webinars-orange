@@ -1,0 +1,121 @@
+@mixin retina($range) {
+    @if $range == 1.5x {
+      @media (-webkit-min-device-pixel-ratio: 1.5), (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+        @content;
+      }
+    } @else if $range == 2x {
+      @media (-webkit-min-device-pixel-ratio: 2), (min-resolution: 192dpi), (min-resolution: 2dppx) {
+        @content;
+      }
+    } @else if $range == 3x {
+      @media (-webkit-min-device-pixel-ratio: 3), (min-resolution: 3dppx) {
+        @content;
+      }
+    }
+}
+
+@mixin responsive($range) {
+  @if $range == desktop {
+    @media (min-width: 720px) {
+      @content;
+    }
+  } @else if $range == mobile {
+    @media (max-width: 719px) {
+      @content;
+    }
+  } @else if $range == tablet {
+    @media (min-width: 880px) {
+      @content;
+    }
+  } @else if $range == resp {
+    @media (min-width: 720px) and (max-width: 1080px) {
+      @content;
+    }
+  } @else if $range == bigDesk {
+    @media (min-width: 1030px) {
+      @content;
+    }
+  } @else if $range == smallDesk {
+    @media (min-width: 900px) {
+      @content;
+    }
+  }
+  
+}
+
+
+@mixin coverBgImg($imgSrs) {
+    background-image: url($imgSrs);
+    background-position: center;
+    background-size: cover;
+}
+
+@mixin coverPicture($width, $height) {
+  width: $width;
+  height: $height;
+  overflow: hidden;
+  @content;
+  
+  picture {
+    width: inherit;
+    height: inherit;
+    img {
+      width: inherit;
+      height: inherit;
+      object-fit: cover;
+      object-position: center;
+    }
+  }
+}
+
+@mixin uploadEmoji($url, $url2x, $url3x) {
+    @include coverBgImg($url);
+
+    @include retina(2x) {
+        @include coverBgImg($url2x);
+    }
+    @include retina(3x) {
+        @include coverBgImg($url3x);
+    }
+}
+
+@mixin boxSize($w, $h) {
+  width: $w;
+  height: $h;
+}
+
+@mixin uploadImage($name, $resp: desk, $size:null) {
+  background-image: url('../images/emoji/emoji-#{$name}_#{$resp}#{$size}.png');
+  background-position: center;
+  background-size: cover;
+}
+
+@mixin uploadRespEmoji($name, $resp:desk, $size:null) {
+
+  @include responsive(mobile) {
+    @include boxSize(64px, 64px);
+    @include uploadImage($name, mob);
+
+    @include retina(2x) {
+      @include uploadImage($name, mob, '@2x');
+    }
+    @include retina(3x) {
+      @include uploadImage($name, mob, '@3x');
+    }
+  }
+
+  @include responsive(desktop) {
+    @include boxSize(80px, 80px);
+    @include uploadImage($name, desk);
+
+    @include retina(2x) {
+      @include uploadImage($name, desk, '@2x');
+    }
+    @include retina(3x) {
+      @include uploadImage($name, desk, '@3x');
+    }
+  }
+}
+
+
+

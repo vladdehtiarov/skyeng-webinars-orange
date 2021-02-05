@@ -1,0 +1,195 @@
+// Form block style
+.form-block {
+    width: 300px;
+    margin: 0 auto;
+    margin-top: 40px;
+    padding: 20px;
+    padding-bottom: 40px;
+    background-color: $blue_2;
+    border-radius: 16px;
+
+    @include responsive(desktop) {
+        width: 100%;
+        display: flex;
+        align-items: flex-start;
+        justify-content: space-between;
+        padding: 22px 24px 48px 24px;
+        margin-top: 152px;
+    }
+
+    .form {
+
+        @include responsive(desktop) {
+            margin-top: -6px;
+        }
+    }
+    
+    // Content 
+    &__content {
+        @include responsive(desktop) { 
+            width: 646px;
+        }
+    }
+
+    // Title
+    &__title {
+        position: relative;
+    }
+
+
+    // label
+    &__title-label {
+        width: 250px;
+        
+        @include responsive(desktop) { 
+            width: 560px;
+        }
+    }
+
+    // Sticker
+    &__title-sticker {
+        @include boxSize(183px, 112px);
+        @include coverBgImg('../images/stickers/waiting-you.png');
+
+        position: absolute;
+        top: -35px;
+        left: 115px;
+
+        @include responsive(desktop) {
+            @include boxSize(334px, 220px);
+
+            top: auto;
+            left: 273px;
+            bottom: -30px;
+        }
+    }
+
+    // info block
+    &__info {
+        margin-top: 16px;
+        font-size: 24px;
+        line-height: 100%;
+        color: rgba($black, 0.48);
+
+        @include responsive(desktop) { 
+            margin-top: 32px;
+            font-size: 40px;
+            line-height: 100%;
+            color: rgba($black, 0.48);
+        }
+    }
+
+    // form
+    &__form-wrapper {
+        width: 100%;
+
+        @include responsive(desktop) { 
+            width: 351px;
+        }
+
+        .form-license__text,
+        .form-license__link {
+            color: rgba($black, 0.48);
+        }
+
+        .form-license__link span {
+            border-bottom: 1px solid rgba($black, 0.48);
+        }
+    }
+ 
+}
+
+.form-block_registr {
+    .form-block__checkbox-wrapper {
+
+        @include responsive(desktop) {
+            margin-top: 75px;
+        }
+    }
+
+    .form-block__title-label {
+        width: 200px;
+
+        @include responsive(desktop) {
+            width: 650px;
+        }
+    }
+
+    .form-block__title-sticker {
+        display: none;
+
+        @include responsive(desktop) {
+            display: block;
+            left: 335px;
+        }
+    } 
+
+    .form-block__checkbox-item {
+        width: 268px;
+        display: flex;
+        justify-content: space-between;
+        margin-top: 16px;
+        cursor: pointer;
+
+        @include responsive(desktop) {
+            width: 536px;
+        }
+
+        &:first-child {
+            margin-top: 24px;
+        }
+
+        .form-block__checkbox-text {
+            width: 236px;
+
+            @include responsive(desktop) {
+                width: 496px;
+            }
+        }
+
+        .form-block__checkbox-link {
+            color: $blue_btn;
+            letter-spacing: -2px;
+        }
+
+        // hide default input styles
+        input[type="checkbox"] {
+            display: none;
+            outline: none;
+        }
+    
+
+        .form-block__checkbox-fake {
+            display: inline-block;
+            width: 24px;
+            height: 24px;
+            border-radius: 6px;
+            border: 3px solid rgba($black, 0.24);
+            position: relative;
+
+            &::before {
+                content: '';
+                width: 24px;
+                height: 24px;
+                @include coverBgImg('../images/icon.png');
+                background-size: 15px;
+                background-repeat: no-repeat;
+                border-radius: 6px;
+                position: absolute;
+                background-color: $blue_btn;
+                top: 50%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                opacity: 0;
+                transition: 0.2s;
+            }
+
+        }
+
+        input[type="checkbox"]:checked + .form-block__checkbox-fake::before {
+            opacity: 1;
+        }
+    }
+
+
+} 

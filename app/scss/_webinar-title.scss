@@ -1,0 +1,18 @@
+// Webinar title styles
+
+.webinar-title {
+    margin-bottom: 8px;
+    font-size: 32px;
+    line-height: 100%;
+    font-weight: normal;
+    position: relative;
+
+
+    @include responsive(desktop) {
+        font-size: 64px;
+    }
+
+    
+
+    
+}

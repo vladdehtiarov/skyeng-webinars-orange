@@ -1,0 +1,114 @@
+// Footer styles
+
+.footer {
+    position: relative;
+    width: 100%;
+    padding: 32px 0 24px 0;
+
+    @include responsive(desktop) {
+        padding-top: 110px;
+        padding-bottom: 42px;
+    }
+
+    .container {
+        display: flex;
+        flex-direction: column;
+
+        @include responsive(desktop) {
+            flex-direction: row;
+            align-items: center;
+            justify-content: space-between;
+        }
+    }
+
+    &__link {
+        position: absolute;
+        bottom: 100px;
+        left: 10px;
+        font-size: 18px;
+        line-height: 32px;
+
+        @include responsive(desktop) {
+            position: relative;
+            top: auto;
+            bottom: auto;
+            margin-left: 35px;
+            font-size: 24px;
+            line-height: 32px;
+        }
+
+        a {
+            text-decoration: underline;
+            color: $black;
+        }
+    }
+
+    // Logo
+    &__logo {
+        width: 100%;
+        margin-bottom: 20px;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+
+        @include responsive(desktop){
+            max-width: 474px;
+            margin-bottom: 0;
+        }
+    }
+
+    // Company logo
+    .company-logo {
+        display: block;
+        width: 127px;
+
+        @include responsive(desktop) {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            width: 219px;
+
+            img:first-child {
+                width: 39px;
+            }
+
+            img:last-child {
+                width: 135px;
+            }
+        }
+    }
+
+    // Client logo
+    .client-logo {
+        display: block;
+        width: 140px;
+        font-size: 18px;
+        line-height: 100%;
+        color: $gray;
+
+        @include responsive(desktop) {
+            width: 250px;
+            font-size: 32px;
+        }
+    }
+
+    // Trademark
+    &__trademark {
+        display: flex;
+        align-items: center;
+
+        span {
+            font-size: 18px;
+            line-height: 32px;
+
+            @include responsive(desktop) {
+                font-size: 24px;
+            }
+        }
+        
+        .emoji {
+            @include boxSize(29px, 29px);
+        }
+    }
+}

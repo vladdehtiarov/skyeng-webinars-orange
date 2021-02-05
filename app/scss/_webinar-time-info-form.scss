@@ -1,0 +1,42 @@
+@import "webinar-time-block";
+@import "webinar-info-block";
+
+// webinar-time-info-form
+.webinar-time-info-form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    .webinar-time-block {
+        order: 1;
+    }
+
+    .webinar-info-block {
+        order: 2;
+    }
+
+    .webinar-form-block {
+        order: 0;
+    }
+    
+    @include responsive(desktop) {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: flex-start;
+
+        .webinar-time-block {
+            order: 0 ;
+        }
+    
+        .webinar-info-block {
+            order: 1;
+        }
+    
+        .webinar-form-block {
+            order: 2;
+        }
+    }
+
+}

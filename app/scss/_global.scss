@@ -1,0 +1,183 @@
+*, html, body {
+    box-sizing: border-box;
+}
+
+
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Stratos LC Web', serif;
+    font-weight: normal;
+    font-style: normal;
+    background-color: $blue;
+    color: $black;
+    font-size: 24px;
+    line-height: 100%;
+    letter-spacing: -0.1px;
+}
+
+a {
+    text-decoration: none;
+    outline: none;
+}
+
+h1, h2, h3, h4, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+h2 {
+    font-size: 32px;
+    line-height: 100%;
+    font-weight: normal;
+
+    @include responsive(desktop) {
+        font-size: 64px;
+
+    }
+}
+
+
+.container {
+    width: 90%;
+    min-width: 300px;
+    margin: 0 auto;
+
+    @include responsive(desktop) {
+        width: 90%;
+        max-width: 1159px;
+    }
+}
+
+.hide {
+    display: none;
+}
+
+.skyeng-logo {
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    @include responsive(desktop) {
+        width: 506px;
+    }
+
+    &__link {
+        width: 130px;
+        height: 34px;
+        position: relative;
+        overflow: hidden;
+
+        @include responsive(desktop) {
+            width: 237px;
+            height: 62px;
+        }
+
+        img {
+            width: inherit;
+            height: inherit;
+            position: absolute;
+            top: 50%;
+            transform: translateY(-50%);
+            object-fit: contain;
+        }
+    }
+}
+
+.client-logo {
+    width: 140px;
+    height: 34px;
+    position: relative;
+    overflow: hidden;
+
+    @include responsive(desktop) {
+        width: 250px;
+        height: 62px;
+    }
+
+    img {
+        width: inherit;
+        height: inherit;
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        object-fit: contain;
+    }
+}
+
+.section-heading {
+    font-size: 32px;
+    line-height: 100%;
+    letter-spacing: -0.1px;
+    font-weight: normal;
+    color: $black;
+}
+
+// Page title stules
+.page-title {
+    width: 100%;
+    position: relative;
+
+    @include responsive(desktop) {
+        margin-top: 30px;
+    }
+
+    // title
+    &__title {
+        font-size: 40px;
+        line-height: 100%;
+        font-weight: normal;
+
+        @include responsive(desktop) {
+            width: 80%;
+            font-size: 80px;
+        }
+    }
+    
+    // sticker
+    &__sticker {
+        width: 40px;
+        height: 40px;
+        position: absolute;
+        top: 80px;
+        left: 224px;
+
+        @include responsive(desktop) {
+            width: 80px;
+            height: 80px;
+            position: absolute;
+            top: 82px;
+            left: 617px;
+        }
+
+        img {
+            width: inherit;
+            height: inherit;
+            object-fit: cover;
+            object-position: center;
+        }
+    }
+
+    .emoji {
+        width: 40px;
+        height: 40px;
+        margin: -10px;
+
+        @include responsive(desktop) {
+            width: 80px;
+            height: 80px;
+            margin: -14px;
+        }
+    }
+}
+
+.page-title_max-width {
+    .page-title__title {
+        @include responsive(desktop) {
+            width: 100%;
+        }
+    }
+}
+
+

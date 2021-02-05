@@ -1,0 +1,71 @@
+// Master class section styles
+.master-class-section {
+    margin-top: 56px;
+    width: 100%;
+
+    @include responsive(desktop) {
+        padding-bottom: 70px;
+        margin-top: 126px;
+        display: flex;
+        flex-wrap: wrap;
+        align-items: flex-start;
+        justify-content: space-between;
+    }
+
+    // title
+    &__title {
+        font-size: 32px;
+        line-height: 100%;
+        position: relative;
+
+        @include responsive(desktop) {
+            font-size: 64px;
+        }
+ 
+        p {
+            width: 150px;
+
+            @include responsive(desktop) {
+                width: 356px;
+            }
+        }
+    }
+
+    // emoji
+
+    .emoji-wrapper {
+        position: absolute;
+        bottom: -10px;
+        left: 132px;
+
+        @include responsive(desktop) {
+            margin-top: 8px;
+            position: relative;
+            bottom: auto;
+            left: auto;
+        }
+    }
+
+    .emoji {
+        width: 40px;
+        height: 40px;
+
+        @include responsive(desktop) {
+            width: 80px;
+            height: 80px;
+        }
+    }
+
+  
+    // Slider 
+    &__slider {
+        margin-top: 27px;
+        width: 100%;
+
+
+        @include responsive(tablet) {
+            margin-top: 0;
+            width: auto;
+        }
+    }
+}

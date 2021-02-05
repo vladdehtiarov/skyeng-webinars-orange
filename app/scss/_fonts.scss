@@ -1,0 +1,39 @@
+@font-face {
+    font-family: "Stratos LC Web";
+    src: url(../fonts/StratosLCWeb-Regular.woff),
+         url(../fonts/StratosLCWeb-Regular.woff2),
+         url(../fonts/StratosLCWeb-Regular.ttf);
+    font-weight: normal;
+    // font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Stratos LC Web";
+    src: url(../fonts/StratosLCWeb-Light.woff),
+         url(../fonts/StratosLCWeb-Light.woff2),
+         url(../fonts/StratosLCWeb-Light.ttf);
+    font-weight: 300;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Stratos LC Web";
+    src: url(../fonts/StratosLCWeb-Medium.woff),
+         url(../fonts/StratosLCWeb-Medium.woff2),
+         url(../fonts/StratosLCWeb-Medium.ttf);
+    font-weight: 500;
+    font-display: swap;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: "Stratos LC Web";
+    src: url(../fonts/StratosLCWeb-Bold.woff),
+         url(../fonts/StratosLCWeb-Bold.woff2),
+         url(../fonts/StratosLCWeb-Bold.ttf);
+    font-weight: bold;
+    font-display: swap;
+    font-style: normal;
+}

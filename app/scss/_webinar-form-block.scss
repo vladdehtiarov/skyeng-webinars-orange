@@ -1,0 +1,30 @@
+//webinar-form-block
+.webinar-form-block {
+    display: inline-block;
+    width: 300px;
+    height: auto;
+    margin-top: 16px;
+    padding: 20px;
+    padding-bottom: 40px;
+    background-color: $purple;
+    border-radius: 16px;
+
+    @include responsive(desktop) {
+        width: 400px;
+        height: 560px;
+        margin-top: 0px;
+        padding: 24px;
+        padding-bottom: 64px;
+    }
+
+    &__title {
+        font-size: 24px;
+        line-height: 100%;
+        color: $white;
+
+        @include responsive(desktop) {
+            font-size: 40px;
+        }
+    }
+    
+}

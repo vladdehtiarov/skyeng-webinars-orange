@@ -1,0 +1,20 @@
+
+// Styles for header
+
+.header {
+    padding: 12px 0 22px 0;
+    
+    @include responsive(desktop) {
+        padding: 50px 0;
+    }
+
+    .container {
+        @include responsive(desktop) {
+            height: auto;
+            position: relative;
+            display: flex;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+}

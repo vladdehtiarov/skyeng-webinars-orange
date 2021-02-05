@@ -1,0 +1,41 @@
+// affiche-all-page styles
+.affiche-all-page {
+
+    .webinars-section__item:nth-child(odd) {
+        .webinar-image {
+            background-color: $purple-3;
+        }
+    }
+
+    .webinars-section__item:nth-child(even) {
+        .webinar-image {
+            background-color: $blue_2;
+        }
+    }
+
+    .page-title {
+        .emoji--only-mobile {
+            @include boxSize(40px, 40px);
+        }
+
+        .emoji--only-desktop {
+            @include responsive(desktop) {
+                @include boxSize(80px, 80px);
+            }
+        }
+
+    }
+
+    .section-heading {
+        .emoji--only-mobile {
+            @include boxSize(40px, 40px);
+        }
+
+        .emoji--only-desktop {
+            @include responsive(desktop) {
+                @include boxSize(80px, 80px);
+            }
+        }
+    }
+}
+  

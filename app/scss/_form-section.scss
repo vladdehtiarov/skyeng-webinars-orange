@@ -1,0 +1,308 @@
+
+// Form styles
+.form-section {
+    width: 100%;
+    margin-top: 32px;
+
+    @include responsive(desktop) {
+        margin-top: 76px;
+    }
+
+    // Form wrapper styles
+    &__wrapper {
+        width: 100%;
+        height: auto;
+        padding: 20px 0 32px 0;
+        position: relative;
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        justify-content: space-between;
+        background-color: $purple;
+        color: $white;
+        border-radius: 16px;
+
+        @include responsive(desktop) {
+            padding: 24px;
+            padding-top: 2px;
+            padding-bottom: 38px;
+            flex-direction: row;
+            justify-content: space-between;
+        }
+    }
+
+
+    // Form sticker styles
+    &__sticker {
+        position: absolute;
+        top: -46px;
+        right: 0;
+        @include boxSize(110px, 110px);
+        @include uploadEmoji(
+            '../images/emoji/emoji-peace.png',
+            '../images/emoji/emoji-peace@2x.png',
+            '../images/emoji/emoji-peace@3x.png'
+        );
+        transform: rotate(11.24deg);
+
+        @include responsive(desktop) {
+            display: inline-table;
+            top: -0;
+            left: 420px;
+            @include boxSize(180px, 180px);
+        }
+
+        @include responsive(resp) {
+            left: 38vw;
+            @include boxSize(13vw, 13vw);
+        }
+    }
+
+
+    // Form title styles 
+    &__title {
+        width: 90%;
+        margin: 0 auto;
+        position: relative;
+
+        @include responsive(desktop) {
+            width: 564px;
+            margin: 0;
+        }
+
+        @include responsive(resp) {
+            width: 50vw;
+        }
+
+        p {
+            width: 225px;
+            line-height: 100%;
+            letter-spacing: -0.1px;
+            text-align: left;
+
+            @include responsive(desktop) {
+                width: 92%;
+                font-weight: 400;
+                font-size: 56px;
+            }
+
+            @include responsive(resp) {
+                width: 47vw;
+                font-size: 5vw;
+            }
+        }
+
+        // Form title sticker styles 
+        &-sticker {
+            position: absolute;
+            top: 92px;
+            right: auto;
+            left: 67px;
+            transform: rotate(-2.53deg);
+
+            @include responsive(desktop) {
+                width: 356px;
+                top: 215px;
+                right: 0;
+                left: 150px;
+            }
+
+            @include responsive(resp) {
+                width: 33vw;
+                top: 19vw;
+                right: 0;
+                left: 14vw;
+            }
+
+            svg {
+                @include responsive(desktop) {
+                    width: 356px;
+                    height: 84px;
+                }
+
+                @include responsive(resp) {
+                    width: 33vw;
+                    height: 8vw;
+                }
+            }
+
+            &::before {
+                content: 'английский';
+                position: absolute;
+                top: 40%;
+                left: 50%;
+                transform: translate(-50%, -50%);
+                color: #091E2A;
+                font-size: 23px;
+
+                @include responsive(desktop) {
+                    font-size: 52px;
+                }
+
+                @include responsive(resp) {
+                    font-size: 5vw;
+                }
+            }
+        }
+    }
+
+    // Form styles
+    &__form {
+        width: 90%;
+        margin: 0 auto;
+        margin-top: 24px;
+
+        @include responsive(desktop) {
+            width: 352px;
+            margin: 0;
+            margin-top: 14px;
+        }
+
+        @include responsive(resp) {
+            width: 32vw;
+        }
+    }
+
+    &__form-title {
+        line-height: 100%;
+        letter-spacing: -0.1px;
+
+        @include responsive(desktop) {
+            margin-top: 7px;
+            font-size: 40px;
+        }
+
+        @include responsive(resp) {
+            font-size: 4vw;
+        }
+    }
+
+    .form {
+        @include responsive(desktop) {
+            margin-top: 17px;
+        }
+
+        @include responsive(resp) {
+            margin-top: 1.5vw;
+    
+            &-input {
+                min-width: 32vw;
+                margin: 0.5vw 0;
+                font-size: 2.3vw;
+            }
+        
+            &-btn {
+                min-width: 32vw;
+                margin-top: 1.5vw;
+                font-size: 2.3vw;
+            }
+        
+            &-license {
+                width: 80%;
+                margin-top: 1.3vw;
+                font-size: 1.6vw;
+            }
+        }
+    }
+}
+
+// Last form styles
+.last-form {
+    @include responsive(desktop) {
+        margin-top: 130px;
+    }
+
+    .form-section__wrapper {
+        @include responsive(desktop) {
+            align-items: flex-start;
+            padding: 24px;
+            padding-bottom: 36px;
+        }
+    }
+
+    // Title styles
+    .form-section__title {
+        p {
+            width: 242px;
+
+            @include responsive(desktop) {
+                width: 100%;
+            }
+        }
+    }
+
+    .sticker-hotns {
+        display: none;
+
+        @include responsive(desktop) {
+            display: block;
+            z-index: 10;
+            transform: rotate(-11deg);
+            top: 79%;
+            left: 6%;
+            @include boxSize(180px, 180px);
+            @include uploadEmoji(
+                '../images/emoji/emoji-horns.png',
+                '../images/emoji/emoji-horns@2x.png',
+                '../images/emoji/emoji-horns@3x.png'
+            );
+        }
+
+        @include responsive(resp) {
+            @include boxSize(13vw, 13vw);
+        }
+    }
+
+    .sticker-angel {
+        top: 15%;
+        left: 64%;
+        transform: rotate(17deg);
+        @include boxSize(100px, 100px);
+        @include uploadEmoji(
+            '../images/emoji/emoji-angel.png',
+            '../images/emoji/emoji-angel@2x.png',
+            '../images/emoji/emoji-angel@3x.png'
+        );
+
+        @include responsive(desktop) {
+            top: 50%;
+            left: 24%;
+            z-index: 10;
+            @include boxSize(180px, 180px);
+        }
+
+        @include responsive(resp) {
+            @include boxSize(13vw, 13vw);
+        }
+    }
+
+    // Form title sticker styles 
+    .form-section__title-sticker {
+        top: 78%;
+        right: auto;
+        left: 12%;
+
+        @include responsive(desktop) {
+            top: 75%;
+            left: 12%;
+        }
+
+        &::before {
+            content: 'английском';
+        }
+    }
+
+    .form-section__form-title {
+        @include responsive(desktop) {
+            margin-top: 0;
+        }
+    }
+
+    .form-section__form {
+        margin-top: 32px;
+
+        @include responsive(desktop) {
+            margin-top: 0;
+        }
+    }
+}

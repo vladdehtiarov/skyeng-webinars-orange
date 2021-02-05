@@ -1,0 +1,306 @@
+.emoji {
+    display: inline-block;
+
+    //spoke
+    &.emoji-spoke {
+        @include uploadRespEmoji(spoke);
+    }
+
+    // airplane
+    &.emoji-airplane {
+        @include uploadRespEmoji(airplane);
+    }
+
+    // angry
+    &.emoji-angry {
+        @include uploadRespEmoji(angry);
+    }
+
+    // backpack
+    &.emoji-backpack {
+        @include uploadRespEmoji(backpack);
+    }
+
+    // bell
+    &.emoji-bell {
+        @include uploadRespEmoji(bell);
+    }
+
+    // biceps
+    &.emoji-biceps {
+        @include uploadRespEmoji(biceps);
+    }
+
+    // bomb
+    &.emoji-bomb {
+        @include uploadRespEmoji(bomb);
+    }
+
+    // briefcase
+    &.emoji-briefcase {
+        @include uploadRespEmoji(briefcase);
+    }
+
+    // cat
+    &.emoji-cat {
+        @include uploadRespEmoji(cat);
+    }
+
+    // devil
+    &.emoji-devil {
+        @include uploadRespEmoji(devil);
+    }
+
+    // diagram
+    &.emoji-diagram {
+        @include uploadRespEmoji(diagram);
+    }
+
+    // facepalm-man
+     &.emoji-facepalm-man {
+        @include uploadRespEmoji(facepalm-man);
+    }
+
+    // facepalm-woman
+    &.emoji-facepalm-woman {
+        @include uploadRespEmoji(facepalm-woman);
+    }
+
+    // flag-ru
+    &.emoji-flag-ru {
+        @include uploadRespEmoji(flag-ru);
+    }
+
+    // flag-usa
+    &.emoji-flag-usa {
+        @include uploadRespEmoji(flag-usa);
+    }
+
+    // folder
+     &.emoji-folder {
+        @include uploadRespEmoji(folder);
+    }
+
+    // globe
+    &.emoji-globe {
+        @include uploadRespEmoji(globe);
+    }
+
+    // green
+    &.emoji-green {
+        @include uploadRespEmoji(green);
+    }
+
+    // hat
+    &.emoji-hat {
+        @include uploadRespEmoji(hat);
+    }
+
+    // headphones
+    &.emoji-headphones {
+        @include uploadRespEmoji(headphones);
+    }
+
+    // joystick
+    &.emoji-joystick {
+        @include uploadRespEmoji(joystick);
+    }
+
+    // like
+    &.emoji-like {
+        @include uploadRespEmoji(like);
+    }
+
+    // lol
+    &.emoji-lol {
+        @include uploadRespEmoji(lol);
+    }
+
+    // love
+    &.emoji-love {
+        @include uploadRespEmoji(love);
+    }
+
+    // magnifier
+    &.emoji-magnifier {
+        @include uploadRespEmoji(magnifier);
+    }
+
+    // party
+    &.emoji-party {
+        @include uploadRespEmoji(party);
+    }
+
+    // pen
+    &.emoji-pen {
+        @include uploadRespEmoji(pen);
+    }
+
+    // pencil
+    &.emoji-pencil {
+        @include uploadRespEmoji(pencil);
+    }
+
+    // pizza
+    &.emoji-pizza {
+        @include uploadRespEmoji(pizza);
+    }
+
+    // plus
+    &.emoji-plus {
+        @include uploadRespEmoji(plus);
+    }
+
+    // pointing-blue
+    &.emoji-pointing-blue {
+        @include uploadRespEmoji(pointing-blue);
+    }
+
+    // pointing-green
+    &.emoji-pointing-green {
+        @include uploadRespEmoji(pointing-green);
+    }
+
+    // poop
+    &.emoji-poop {
+        @include uploadRespEmoji(poop);
+    }
+
+    // rocket
+    &.emoji-rocket {
+        @include uploadRespEmoji(rocket);
+    }
+
+    // shield
+    &.emoji-shield {
+        @include uploadRespEmoji(shield);
+    }
+
+    // sofa
+    &.emoji-sofa {
+        @include uploadRespEmoji(sofa);
+    }
+
+    // stopwatch
+    &.emoji-stopwatch {
+        @include uploadRespEmoji(stopwatch);
+    }
+
+    // sunglasses
+    &.emoji-sunglasses {
+        @include uploadRespEmoji(sunglasses);
+    }
+
+    // taxi
+    &.emoji-taxi {
+        @include uploadRespEmoji(taxi);
+    }
+
+    // teacher-man
+    &.emoji-teacher-man {
+        @include uploadRespEmoji(teacher-man);
+    }
+
+    // teacher-woman
+    &.emoji-teacher-woman {
+        @include uploadRespEmoji(teacher-woman);
+    }
+
+    // trophy
+    &.emoji-trophy {
+        @include uploadRespEmoji(trophy);
+    }
+
+    // wallet
+    &.emoji-wallet {
+        @include uploadRespEmoji(wallet);
+    }
+
+    // watch
+    &.emoji-watch {
+        @include uploadRespEmoji(watch);
+    }
+
+
+    // book
+    &.emoji-book {
+        @include uploadRespEmoji(book);
+    }
+
+    // peace
+    &.emoji-peace {
+        @include uploadRespEmoji(peace);
+    }
+
+    // clock
+    &.emoji-clock {
+        @include uploadRespEmoji(clock);
+    }
+
+    // flag-uk
+    &.emoji-flag-uk {
+        @include uploadRespEmoji(flag-uk);
+    }
+
+    // fire
+    &.emoji-fire {
+        @include uploadRespEmoji(fire);
+    }
+
+    // gift
+    &.emoji-gift {
+        @include uploadRespEmoji(gift);
+    }
+
+    // blue
+    &.emoji-blue {
+        @include uploadRespEmoji(blue);
+    }
+
+    // orange
+    &.emoji-orange {
+        @include uploadRespEmoji(orange);
+    }
+
+    // mobile-phone
+    &.emoji-mobile-phone {
+        @include uploadRespEmoji(mobile-phone);
+    }
+
+    // microphone
+    &.emoji-microphone {
+        @include uploadRespEmoji(microphone);
+    }
+
+    // heart
+    &.emoji-heart {
+        @include uploadRespEmoji(heart);
+    }
+
+    // play
+    &.emoji-play {
+        @include uploadRespEmoji(play);
+    }
+
+    // clapper
+    &.emoji-clapper {
+        @include uploadRespEmoji(clapper);
+    }
+    
+}
+
+.emoji--only-desktop {
+    display: none;
+
+    @include responsive(desktop) {
+        display: inline-block;
+    }
+}
+
+.emoji--only-mobile {
+    display: none;
+
+    @include responsive(mobile) {
+        display: inline-block;
+    }
+}

@@ -1,0 +1,311 @@
+// Services section styles
+.services-section {
+    margin-top: 40px;
+
+    @include responsive(smallDesk) {
+        margin-top: 88px;
+    }
+
+    // Title styles
+    &__title {
+        width: 100%;
+        max-width: 300px;
+        margin: 0 auto;
+        position: relative;
+
+        @include responsive(smallDesk) {
+            width: 100%;
+            max-width: 968px;
+            margin-left: 0;
+            margin-right: auto;
+        }
+
+        .section-heading {
+            @include responsive(smallDesk) {
+                font-size: 56px;
+            }
+
+            span {
+                display: block;
+
+                @include responsive(smallDesk) {
+                    display: inline-block;
+                }
+            }
+        }
+    }
+
+    // Title stickers styles
+    &__title-stickers {
+        width: 162px;
+        height: 82px;
+        position: absolute;
+        bottom: -30px;
+        left: 138px;
+
+        @include responsive(smallDesk) {
+            width: 298px;
+            height: 160px;
+            bottom: -78px;
+            left: 538px;
+        }
+
+        .title-stickers__wraper {
+            width: inherit;
+            height: inherit;
+            position: relative;
+        }
+
+        // Sticker sircle
+        &-sircle {
+            display: inline-block;
+            width: 58px;
+            height: 58px;
+            border-radius: 50%;
+            background-color: $purple-2;
+            color: $white;
+            font-size: 29px;
+            line-height: 32px;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            transform: translateY(-50%) rotate(-7.03deg);
+
+            @include responsive(smallDesk) {
+                display: inline-block;
+                width: 108px;
+                height: 108px;
+                font-size: 54px;
+                line-height: 60px;
+            }
+
+            .stickers-sircle__text {
+                width: inherit;
+                height: inherit;
+                position: relative;
+
+                &::before {
+                    content: 'где';
+                    position: absolute;
+                    top: 45%;
+                    left: 50%;
+                    transform: translate(-50%, -50%);
+                }
+            }
+        }
+
+        // Sticker cloud
+        &-cloud {
+            width: 111px;
+            height: 58px;
+            color: $white;
+            font-size: 29px;
+            line-height: 32px;
+            position: absolute;
+            top: 40%;
+            right: 0;
+            transform: translateY(-50%) rotate(7.16deg);
+
+            @include responsive(smallDesk) {
+                margin-top: 11px;
+                margin-right: -3px;
+                width: 207px;
+                height: 108px;
+                font-size: 54px;
+                line-height: 60px;
+                transform: translateY(-50%) rotate(2deg);
+            }
+            
+            .stickers-cloud__inner {
+                width: inherit;
+                height: inherit;
+                position: relative;
+                
+                svg {
+                    width: inherit;
+                    height: inherit;
+                }
+
+                &::before {
+                    content: 'угодно';
+                    position: absolute;
+                    top: 45%;
+                    left: 50%;
+                    transform: translate(-50%, -50%)
+                }
+            }
+        }
+    }
+
+    // Services styles
+    &__services{
+        width: 100%;
+        margin-top: 30px;
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+        justify-content: center;
+
+        @include responsive(smallDesk) {
+            margin-top: 65px;
+            justify-content: space-between;
+        }
+
+        // Services sticer styles
+        &-sticker {
+            position: absolute;
+            @include boxSize(100px, 100px);
+
+            @include responsive(smallDesk) {
+                @include boxSize(180px, 180px);
+
+            }
+        }
+
+        &-block {
+            width: 285px;
+            height: 164px;
+            margin-top: 18px;
+            border-radius: 16px;
+            padding: 12px;
+            position: relative;
+
+            @include responsive(smallDesk) {
+                width: 560px;
+                height: 200px;
+                margin-top: 32px;
+                border-radius: 16px;
+                padding: 24px;
+                font-size: 40px;
+                line-height: 100%;
+            }
+
+            &:first-child {
+                background-color: $purple-2;
+                border: 8px solid $purple-2;
+
+                @include responsive(smallDesk) {
+                    border: none;
+                    margin-top: 41px;
+                }
+
+                // Personal sticker styles
+                .services-section__services-sticker {
+                    top: -20%;
+                    right: 0;
+                    @include uploadEmoji(
+                        '../images/emoji/emoji-orange.png',
+                        '../images/emoji/emoji-orange@2x.png',
+                        '../images/emoji/emoji-orange@3x.png'
+                    );
+
+                    @include responsive(smallDesk) {
+                        display: none;
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                background-color: $blue;
+                border: 8px solid $white;
+
+                @include responsive(smallDesk) {
+                    width: 584px;
+                    height: 224px;
+                    border: 12px solid $white;
+                    margin-right: -13px;
+                    margin-top: 44px;
+                }
+                
+                p {
+                    width: 92%;
+                }
+
+                // Personal sticker styles
+                .services-section__services-sticker {
+                    bottom: 0;
+                    right: 0;
+                    transform: rotate(6.04deg);
+                    @include uploadEmoji(
+                        '../images/emoji/emoji-mobile-phone.png',
+                        '../images/emoji/emoji-mobile-phone@2x.png',
+                        '../images/emoji/emoji-mobile-phone@3x.png'
+                    );
+
+                    @include responsive(smallDesk) {
+                        bottom: auto;
+                        top: -72px;
+                        right: -28px;
+                    }
+                }
+            }
+
+            &:nth-child(3) {
+                background-color: $blue;
+                border: 8px solid $white;
+
+                @include responsive(smallDesk) {
+                    width: 584px;
+                    height: 224px;
+                    border: 12px solid $white;
+                    margin-left: -10px;
+                    margin-top: 18px;
+                }
+
+                p {
+                    width: 76%;
+
+                    @include responsive(smallDesk) {
+                        width: 100%;
+                    }
+                }
+
+                // Personal sticker styles
+                .services-section__services-sticker {
+                    top: 0;
+                    right: 0;
+                    transform: matrix(0.99, -0.16, 0.16, 0.99, 0, 0);
+                    @include uploadEmoji(
+                        '../images/emoji/emoji-microphone.png',
+                        '../images/emoji/emoji-microphone@2x.png',
+                        '../images/emoji/emoji-microphone@3x.png'
+                    );
+
+                    @include responsive(smallDesk) {
+                        top: -50px;
+                        right: -34px;
+                    }
+                }
+            }
+
+            &:last-child {
+                background-color: $blue_2;
+                border: 8px solid $blue_2;
+
+                @include responsive(smallDesk) {
+                    border: none;
+                    margin-top: 22px;
+                }
+
+
+                // Personal sticker styles
+                .services-section__services-sticker {
+                    bottom: -24%;
+                    right: 0;
+                    transform: matrix(1, -0.07, 0.07, 1, 0, 0);
+                    @include uploadEmoji(
+                        '../images/emoji/emoji-flag-uk.png',
+                        '../images/emoji/emoji-flag-uk@2x.png',
+                        '../images/emoji/emoji-flag-uk@3x.png'
+                    );
+
+                    @include responsive(smallDesk) {
+                        bottom: -34%;
+                        right: 36px;
+                    }
+                }
+            }
+        }
+    }
+}

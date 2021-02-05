@@ -1,0 +1,301 @@
+// Webinar section styles
+.webinars-section {
+    width: 100%;
+
+    // Webinars wrapper
+    &__webinars-wrapp {
+        width: 100%;
+        // margin-top: 40px;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+        align-items: center;
+
+        @include responsive(desktop) {
+            flex-direction: row;
+            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
+    &__title {
+        @include responsive(desktop) {
+            font-size: 64px;
+        }
+    }
+
+    // All items
+    &__all-items {
+        width: 300px;
+        margin-top: 32px;
+
+        @include responsive(desktop) {
+            margin-top: 82px;
+            width: 360px;
+        }
+    }
+
+    .all-items__link {
+        font-size: 32px;
+        line-height: 100%;
+        text-decoration: underline;
+        color: $black;
+
+        @include responsive(desktop) {
+            font-size: 56px;
+        }
+    }
+
+    .all-items__link:hover {
+        color: $blue_btn;
+    }
+    
+    // webinar item
+    &__item {
+        margin-top: 40px;
+        width: 300px;
+        height: 451px;
+        position: relative;
+
+        @include responsive(desktop) {
+            margin-top: 84px;
+            width: 360px;
+            height: 546px;
+        }
+    }
+
+    // item hovver effects
+    &__item:hover {
+
+        .webinar-image__text {
+            opacity: 1;
+            // transition: all 0.2s ease-in;
+
+        }
+        .webinar-image {
+            picture {
+                opacity: 0;
+                // transition: all 0.2s ease-in;
+            }
+        }
+    }
+
+    // BG text
+    .webinar-image__text {
+        position: absolute;
+        top: 0;
+        left: 0;
+        margin: 24px;
+        font-size: 32px;
+        line-height: 120%;
+        color: rgba($black, 0.48);
+        opacity: 0;
+        z-index: 10;
+        // transition: all 0.2s ease-in;
+
+        @include responsive(desktop) {
+            font-size: 40px;
+        }
+    }
+
+    // webinar image
+    .webinar-image {
+        width: 300px;
+        height: 300px;
+        border-radius: 16px;
+        position: relative;
+        overflow: hidden;
+        background-color: $purple-3;
+
+        @include responsive(desktop) {
+            width: 360px;
+            height: 360px;
+        }
+
+        picture {
+            width: inherit;
+            height: inherit;
+            opacity: 1;
+            // transition: all 0.2s ease-in;
+
+
+            img {
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+
+        // Sticker
+        &__sticker {
+            position: absolute;
+            top: -10%;
+            left: 48%;
+            width: 152px;
+            height: 130px;
+            overflow: hidden;
+            z-index: 10;
+
+            @include responsive(desktop) {
+                position: absolute;
+                top: -11%;
+                left: 54%;
+                width: 208px;
+                height: 178px;
+            }
+
+            img {
+                width: inherit;
+                height: inherit;
+                object-fit: cover;
+                object-position: center;
+            }
+        }
+
+    }
+
+    // info 
+    .webinar-info {
+        width: 100%;
+        margin-top: 16px;
+
+        @include responsive(desktop) {
+            margin-top: 24px;
+        }
+
+        // webinar date, time
+        &__time {
+            font-size: 40px;
+            line-height: 100%;
+            margin-left: 0;
+            margin-right: auto;
+
+            .webinar-info__time-date,
+            .webinar-info__time-time {
+                letter-spacing: -4px;
+            }
+        }
+
+        &__time_recording {
+
+            @include responsive(desktop) {
+                
+            }
+
+            .webinar-info__time-date,
+            .webinar-info__time-time {
+                color: rgba($black, 0.24);
+            }
+        }
+
+        // webinar name
+        &__name {
+            width: 82%;
+            margin-top: 8px;
+            line-height: 120%;
+
+            @include responsive(desktop) {
+                width: 88%;
+                font-size: 32px;
+            }
+
+            a {
+                text-decoration: underline;
+                text-align: left;
+                color: $black;
+            }
+        }
+
+        &__name:hover {
+            a {
+                color: $blue_btn
+            }
+        }
+
+    }
+
+
+}
+
+// remove bg class
+.webinars-section__item_remove-bg {
+    .webinar-image__text {
+        opacity: 1;
+        // transition: all 0.2s ease-in;
+
+    }
+
+    .webinar-image {
+
+        picture {
+            opacity: 0;
+            // transition: all 0.2s ease-in;
+        }
+    }
+}
+
+// most popular webinar
+.most-popular-webinar {
+    margin-top: 56px;
+
+    @include responsive(desktop) {
+        margin-top: 120px;
+    }
+
+    .webinars-section__item {
+        margin-top: 40px;
+        height: auto;
+
+        @include responsive(desktop) {
+            margin-top: 65px;
+        }
+    }
+
+    .webinars-section__item:nth-child(-n+3) {
+        margin-top: 32px;
+
+        @include responsive(desktop) {
+            margin-top: 48px;
+        }
+    }
+
+    .webinars-section__all-items {
+        margin-top: 32px;
+
+        @include responsive(desktop) {
+            margin-top: 74px;
+        }
+    }
+
+    .webinar-image {
+        background-color: $blue_2;
+    }    
+}
+
+//  webinars section title
+.webinars-section__title {
+    font-size: 32px;
+    line-height: 100%;
+    font-weight: normal;
+}
+
+// Webinars-section_all
+.webinars-section_all {
+
+    .webinars-section__item {
+
+        @include responsive(desktop) {
+            margin-top: 80px;
+        }
+    }
+
+    .webinars-section__item:nth-child(-n+3) {
+    
+        @include responsive(desktop) {
+            margin-top: -7px;
+        }
+    }
+}

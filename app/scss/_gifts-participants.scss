@@ -1,0 +1,61 @@
+// gifts-participants styles
+.gifts-participants {
+    margin-top: 32px;
+
+    @include responsive(desktop) {
+        margin-top: 120px;
+    }
+
+    &__inner {
+        width: 100%;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+
+        @include responsive(desktop) {
+            flex-direction: row;
+        }
+    }
+
+    &__sticker {
+        z-index: 10;
+        @include boxSize(246px, 179px);
+        @include coverBgImg('../images/stickers/we-have-nice-news.png');
+
+        @include responsive(desktop) {
+            @include boxSize(403px, 293px);
+            margin-top: -42px;
+            margin-left: -90px;
+        }
+    }
+
+    &__info {
+        @include responsive(desktop) {
+            width: 715px;
+            margin-left: -52px;
+        }
+    }
+
+    &__label {
+        @include responsive(desktop) {
+            padding-bottom: 16px;
+        }
+    }
+
+    &__text-item {
+        width: 255px;
+        padding-top: 16px;
+        font-size: 24px;
+        line-height: 100%;
+        color: rgba($black, 0.48);
+
+        @include responsive(desktop) {
+            width: 715px;
+            font-size: 40px;
+
+            &:first-child {
+                padding-top: 32px;
+            }
+        }
+    }
+}
