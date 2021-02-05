@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Классический стандартный лендинг</title>
+    <link rel="stylesheet" href="css/style.min.css">
+    <script defer src="js/main.min.js"></script>
+</head>
+<body class="webinar-prev-v1">
+
+    <!-- Header -->
+    <header class="header">
+        <div class="container">
+            <div class="skyeng-logo">
+                <a href="/#" class="skyeng-logo__link">
+                    <img src="images/logo/logo.png" alt="skyeng">
+                </a>
+                <a href="/#" class="client-logo">
+                    <img src="images/logo/logo-p.png" alt="х Лого партнера">
+                </a>
+            </div>
+        </div>
+    </header>
+    <!-- Header END -->
+
+    <!-- Main -->
+    <main class="main">
+        <div class="container">
+            
+            <!-- webinar topic -->
+            <section class="webinar-topic">
+                <h1 class="webinar-topic__title">
+                    Что делать, если... домашка заканчивается слезами
+                    <span class="emoji emoji-angry"></span>
+                </h1>
+
+                <div class="webinar-topic__img-box webinar-topic__img-box_rect">
+                    <div class="img-box__image img-box__image_rect">
+                        <picture>
+                            <source type="image/webp" 
+                                    srcset="images/webinars/classic-webinar.webp 1x,
+                                            images/webinars/classic-webinar@2x.webp 2x,
+                                            images/webinars/classic-webinar@3x.webp 3x" alt="webinar">
+                            <img src="images/webinars/classic-webinar.png"
+                                 srcset="images/webinars/classic-webinar@2x.png 2x,
+                                         images/webinars/classic-webinar@3x.png 3x" alt="webinar">
+                        </picture>
+                    </div>
+
+                    <div class="img-box__sticker"></div>        
+                </div>
+            </section>
+
+            <!-- webinar time, info and form section -->
+            <section class="webinar-time-info-form">
+                <!-- webinar time -->
+                <div class="webinar-time-block">
+                    Вебинар пройдет в пятницу 18 сентября в 15:00. Расскажем о детях и их эмоциях
+                </div>
+
+                <!-- webinar info -->
+                <div class="webinar-info-block webinar-info-block_unspeaker">
+                    <!-- <div class="webinar-info-block__sticker"></div> -->
+                    <!-- title -->
+                    <h2 class="webinar-title webinar-title_unspeaker">
+                        <!-- <a class="webinar-title__link" href="#">Анастасия Александрова →</a> -->
+                        <span class="webinar-title__text">Из вебинара вы узнаете</span>
+                        <span class="emoji emoji-book"></span>
+                        <span class="emoji emoji-fire"></span>
+                    </h2>
+                    <!-- info -->
+                    <p class="webinar-info-block__info-items">
+                        Почему ребенок не хочет учиться самостоятельно
+                    </p>
+                    <p class="webinar-info-block__info-items">
+                        Что делать, когда непонятно как реагировать на слезы
+                    </p>
+                    <p class="webinar-info-block__info-items">
+                        Почему приходится заставлять и контролировать
+                    </p>
+                </div>
+
+                <!-- webinar form -->
+                <div class="webinar-form-block">
+                    <div class="webinar-form-block__title">Записаться<span> на вебинар</span></div>
+                    <form class="form">
+                        <div class="form__input-wrapper">
+                            <input type="text" class="form-name form-input" name="name" required placeholder="Имя">
+                            <input type="text" class="form-emal form-input" name="emai" required placeholder="E-mail">
+                            <input type="text" class="form-phone form-input" name="phone" required placeholder="Телефон">
+                            <button type="submit" class="form-btn">Участвовать</button>
+                        </div>
+                    </form>
+                    <div class="form-error"></div> 
+                    <div class="form-license">
+                        <div class="form-license__text">
+                            Нажимая, вы принимаете<br>условия
+                            <a href="#" class="form-license__link"><span>Соглашения</span> →</a>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </div>
+        <div class="container container_max-width">
+            <!-- about webinar -->
+            <section class="about-webinar">
+                <!-- item -->
+                <div class="about-webinar__item">
+                    <div class="about-webinar__item-sticker"></div>
+                    <p class="about-webinar__item-text">
+                        <!-- <span class="emoji emoji-book"></span> -->
+                        Анастасия Александрова, блогер, ведущая<br>ютуб-канала, автор книги
+                    </p>
+                </div>
+
+                <!-- item -->
+                <div class="about-webinar__item about-webinar__item_image">
+                    <!-- <span class="emoji emoji-book"></span>
+                    <p class="about-webinar__item-text">
+                        Ребенок не хочет учиться самостоятельно
+                    </p> -->
+                    <a class="popup-youtube" href="https://www.youtube.com/watch?v=5qap5aO4i9A">
+                        <div class="about-webinar__item-image">
+                            <img src="images/webinars/webinar-video.jpg" alt="about webinar">
+
+                            <div class="about-webinar__item-play-btn">
+                                <a class="popup-youtube" href="https://www.youtube.com/watch?v=5qap5aO4i9A">
+                                    <div class="item-play-btn__inner">
+                                        <svg width="17" height="20" viewBox="0 0 17 20" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                            <path d="M15.5347 9.13804C16.192 9.52469 16.192 10.4753 15.5347 10.8619L1.50702 19.1135C0.840389 19.5057 0 19.025 0 18.2516V1.74842C0 0.975 0.840385 0.494343 1.50702 0.88648L15.5347 9.13804Z" fill="white"/>
+                                        </svg>
+                                        <p>Анастасия</p>
+                                    </div>
+                                </a>
+                            </div>
+                        </div>
+                    </a>    
+
+                </div>
+
+                <!-- item -->
+                <div class="about-webinar__item">
+                    <span class="emoji emoji-cat"></span>
+                    <p class="about-webinar__item-text">
+                        Подойдет для начинающих и тех, кто устал
+                    </p>
+                </div>
+            </section>
+        </div>
+        <div class="container">
+            <!-- Webinar ether -->
+            <section class="webinar-ether">
+                <h2 class="webinar-title webinar-title_unspeaker">
+                    <!-- <a class="webinar-title__link" href="#">Анастасия Александрова →</a> -->
+                    <span class="webinar-title__text">
+                        <span class="webinar-title__inner-text">Во время эфира вы сможете</span>
+                        <span class="emoji emoji-fire"></span>
+                        задать вопросы,
+                        <span class="webinar-title__inner-text">
+                            <span class="emoji emoji-orange"></span>
+                            пообщаться
+                        </span>
+                        с другими родителями и принять участие в розыгрыше призов
+                        <span class="emoji emoji-gift"></span>
+                    </span>
+    
+                </h2>
+            </section>
+
+            <!-- gifts to participants -->
+            <section class="gifts-participants">
+                <div class="gifts-participants__inner">
+                    <div class="gifts-participants__sticker"></div>
+                    <div class="gifts-participants__info">
+                        <h2 class="gifts-participants__label">Подарки участникам</h2>
+                        <div class="gifts-participants__text-wrapper">
+                            <p class="gifts-participants__text-item">
+                                Доступ к имейл-курсу «10 уроков для беспроблемного общения»
+                            </p>
+                            <p class="gifts-participants__text-item">
+                                2 бесплатных урока по английскому при первой оплате
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Master class section -->
+            <section class="master-class-section">
+                <div class="master-class-section__title">
+                    <p>
+                        Как будет проходить вебинар
+                        <span class="emoji emoji-play"></span>
+                    </p>
+                    <p class="master-class-section__title-sub">
+                        Анна расскажет и покажет на своем примере, как справляться со стрессом
+                    </p>
+                </div>
+
+                <div class="master-class-section__video">
+                    <div class="video">
+                        <a class="video__link" href="https://youtu.be/Hxdl2taAXJc">
+                          <picture>
+                          <sourse srcset="https://i.ytimg.com/vi_webp/Hxdl2taAXJc/maxresdefault.webp" type="image/webp">
+                          <img class="video__media" src="https://i.ytimg.com/vi/Hxdl2taAXJc/maxresdefault.jpg" alt="img">
+                        </picture>
+                        </a>
+                        <button class="video__btn" aria-label="Play"> 
+                          <svg width="40" height="40" viewBox="0 0 40 40" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <circle opacity="0.7" cx="20" cy="20" r="20" class="video__btn-shape"/>
+                            <path d="M29.5347 19.138C30.192 19.5247 30.192 20.4753 29.5347 20.8619L15.507 29.1135C14.8404 29.5057 14 29.025 14 28.2516V11.7484C14 10.975 14.8404 10.4943 15.507 10.8865L29.5347 19.138Z" fill="white"/>
+                          </svg>
+                        </button>
+                    </div>
+                </div>
+
+            </section>
+            <!-- Master class section END -->
+        </div>
+        <div class="container container_max-width">
+            <!-- Comments section -->
+            <section class="comments-section comment-section_wow">
+                <!-- section title -->
+                <div class="comments-section__title">
+                    <h2 class="section-heading">
+                        Отзывы о вебинаре
+                        <span class="emoji emoji-heart"></span>
+                        <span class="emoji emoji-heart"></span>
+                    </h2>
+                </div>
+                
+                <div class="comments-section__comments-scroll">
+                    <!-- Comments wrapper -->
+                    <div class="comments-section__comments-wrapp">
+                        <!-- Comment item -->
+                        <div class="comments-section__comment-item">
+                            <!-- Comment title -->
+                            <div class="comment-item__title">
+                                <!-- client image -->
+                                <div class="comment-item__title-img">
+                                    <img src="images/comments/comment-img.png" alt="logo">
+                                </div>
+                                <!-- Client info -->
+                                <div class="comment-item__title-client">
+                                    <!-- client name -->
+                                    <div class="comment-item__title-client_name">Татьяна Бояринцева</div>
+                                    <!-- client location -->
+                                    <div class="comment-item__title-client_location">
+                                        <!-- client country -->
+                                        <span class="comment-item__title-client_country">Россия</span>
+                                        ,
+                                        <!-- client city -->
+                                        <span class="comment-item__title-client_city">Саратов</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- vk icon -->
+                                <div class="comment-item__title-icon">
+                                    <img src="images/stickers/vk.svg" alt="vk">
+                                </div>
+                            </div>
+
+                            <!-- Comment text -->
+                            <div class="comment-item__text">
+                                Очень нравятся занятия. Два раза в неделю с нашим персональным учителем и ещё мы записываемся на групповые занятия. Получается практически каждодневная практика. В домашние задания входит аудирование и знание правил. Моя дочь их выполняет самостоятельно. Благодаря вашей школе, она стала больше знать слов и составлять некоторые фразы на английском. 
+                            </div>
+                        </div>
+                        <!-- Comment item END -->
+
+                        <!-- Comment item -->
+                        <div class="comments-section__comment-item">
+                            <!-- Comment title -->
+                            <div class="comment-item__title">
+                                <!-- client image -->
+                                <div class="comment-item__title-img">
+                                    <img src="images/comments/comment-img.png" alt="logo">
+                                </div>
+                                <!-- Client info -->
+                                <div class="comment-item__title-client">
+                                    <!-- client name -->
+                                    <div class="comment-item__title-client_name">Татьяна Бояринцева</div>
+                                    <!-- client location -->
+                                    <div class="comment-item__title-client_location">
+                                        <!-- client country -->
+                                        <span class="comment-item__title-client_country">Россия</span>
+                                        ,
+                                        <!-- client city -->
+                                        <span class="comment-item__title-client_city">Саратов</span>
+                                    </div>
+                                </div>
+                                
+                                <!-- vk icon -->
+                                <div class="comment-item__title-icon">
+                                    <img src="images/stickers/vk.svg" alt="vk">
+                                </div>
+                            </div>
+
+                            <!-- Comment text -->
+                            <div class="comment-item__text">
+                                Очень нравятся занятия. Два раза в неделю с нашим персональным учителем и ещё мы записываемся на групповые занятия. Получается практически каждодневная практика. В домашние задания входит аудирование и знание правил. Моя дочь их выполняет самостоятельно. Благодаря вашей школе, она стала больше знать слов и составлять некоторые фразы на английском. Очень нравятся занятия. Два раза в неделю с нашим персональным учителем и ещё мы записываемся на групповые занятия. Получается практически каждодневная практика. В домашние задания входит аудирование и знание правил.  
+                            </div>
+                        </div>
+                        <!-- Comment item END -->  
+                        
+                        <!-- Comment item -->
+                        <div class="comments-section__comment-item">
+                            
+                            <div class="comment-item__sticker">
+                                <img src="images/stickers/bang.png" alt="wow">
+                            </div>
+                            
+                            <!-- Comment text -->
+                            <div class="comment-item__text">
+                                Наши  вебинары посетили уже
+                                <span>127467</span>
+                                человек
+                            </div>
+                        </div>
+                        <!-- Comment item END -->  
+                    </div>
+                </div>
+            </section>
+            <!-- Comments section END -->
+
+            <!-- Form block -->
+            
+            <section class="form-block "> <!-- form-block_registr -->
+                <div class="form-block__content">
+                    <!-- Title -->
+                    <div class="form-block__title">
+                        <h2 class="form-block__title-label">
+                            Вебинар пройдет в воскресенье 18 сентября в 15:00
+                            <!-- Записаться на один или несколько вебинаров -->
+                        </h2>
+                        <!-- Sticker -->
+                        <div class="form-block__title-sticker"></div>
+                    </div>
+
+                    <div class="form-block__info">
+                        После записи на ваш e-mail придут ссылка на вебинар и подарки от Skysmart
+                    </div>
+
+                </div>
+
+                <!-- webinar form -->
+                <div class="form-block__form-wrapper">
+                    <form class="form">
+                        <div class="form__input-wrapper">
+                            <input type="text" class="form-name form-input" name="name" required placeholder="Имя">
+                            <input type="text" class="form-emal form-input" name="emai" required placeholder="E-mail">
+                            <input type="text" class="form-phone form-input" name="phone" required placeholder="Телефон">
+                            <button type="submit" class="form-btn">Участвовать</button>
+                        </div>
+                    </form>
+                    <div class="form-error"></div> 
+                    <div class="form-license">
+                        <div class="form-license__text">
+                            Нажимая, вы принимаете<br>условия
+                            <a href="#" class="form-license__link"><span>Соглашения</span> →</a>
+                        </div>
+                    </div>
+                </div>
+
+            </section>
+
+            <!-- Section share about us -->
+            <section class="share-about-us share-about-us_friend">
+                <span>Расскажи о вебинаре</span>
+                <span>другу</span>
+                <span>
+                    через
+                    <a class="share-about-us__link share-on-tg__link" href="#">телеграм</a>
+                    →
+                </span>
+                <span>
+                    или
+                    <a class="share-about-us__link share-on-wa__link" href="#">WhatsApp</a>→
+                </span>
+                
+            </section>
+
+        </div>
+
+        <div class="bg-curve bg-curve_top"></div>
+        <div class="bg-curve bg-curve_bottom"></div>
+    </main>
+    <!-- Main END -->
+    
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <!-- Logo -->
+            <div class="skyeng-logo">
+                <a href="#" class="skyeng-logo__link">
+                    <img src="images/logo/logo.png" alt="skyeng">
+                </a>
+                <a href="#" class="client-logo">
+                    <img src="images/logo/logo-p.png" alt="х Лого партнера">
+                </a>
+            </div>
+            <div class="footer__trademark">
+                <span>&#xa9; Skysmart, 2021</span>
+                <span class="emoji emoji-spoke"></span>
+            </div>
+        </div>
+    </footer>
+    <!-- Footer END -->
+
+    
+
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        $('.popup-youtube').magnificPopup({
+            disableOn: 700,
+            type: 'iframe',
+            mainClass: 'mfp-fade',
+            removalDelay: 160,
+            preloader: false,
+
+            fixedContentPos: false
+	    });
+    </script>
+</body>
+</html>    
