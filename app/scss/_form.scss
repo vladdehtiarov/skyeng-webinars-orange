@@ -1,6 +1,6 @@
 // Form styles
 .form {
-    margin-top: 14px;
+    margin-top: 16px;
 
     @include responsive(desktop) {
         margin-top: 24px;
@@ -38,7 +38,7 @@
         min-width: 260px;
         height: auto;
         min-height: 60px;
-        margin-top: 10px;
+        margin-top: 12px;
         border-radius: 10px;
         outline: none;
         border: none;
@@ -58,15 +58,16 @@
 
     &-license {
         width: 100%;
-        margin-top: 20px;
-        font-size: 16px;
+        margin-top: 18px;
+        font-size: 20px;
         line-height: 100%;
         letter-spacing: 0.2px;
         color: $white;
 
 
         @include responsive(desktop) {
-            margin-top: 22px;
+            margin-top: 25px;
+            font-size: 20px;
         }
 
         &__link {

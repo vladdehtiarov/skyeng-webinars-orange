@@ -1,0 +1,31 @@
+.bg-curve {
+    display: none;
+    overflow: hidden;
+
+    @include responsive(maxDesk) {
+        display: block;
+    }
+
+    position: absolute;
+    background-repeat: no-repeat;
+    z-index: -1;
+    
+    &_top {
+        width: 1320px;
+        height: 2350px;
+        background-image: url(../images/bg-curve_top.svg);
+        background-position: top;
+        background-size: contain;
+        top: 120px;
+        right: 0;
+    }
+
+    &_bottom {
+        width: 1345px;
+        height: 1340px;
+        background-image: url(../images/bg-curve_bottom.svg);
+        background-position: bottom;
+        top: 3365px;
+        left: 0;
+    }
+}

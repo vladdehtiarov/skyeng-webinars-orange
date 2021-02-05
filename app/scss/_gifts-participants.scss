@@ -1,9 +1,12 @@
 // gifts-participants styles
 .gifts-participants {
-    margin-top: 32px;
+    margin-top: 72px;
+    background-color: $purple-2;
+    border-radius: 16px;
+    position: relative;
 
     @include responsive(desktop) {
-        margin-top: 120px;
+        margin-top: 119px;
     }
 
     &__inner {
@@ -17,44 +20,71 @@
         }
     }
 
+    &__text-wrapper {
+       
+
+        @include responsive(desktop) {
+            width: 100%;
+            display: flex;
+            flex-wrap: wrap;
+            flex-direction: row;
+            justify-content: space-between;
+            align-items: flex-start;
+        }
+    }
+
     &__sticker {
         z-index: 10;
         @include boxSize(246px, 179px);
         @include coverBgImg('../images/stickers/we-have-nice-news.png');
+        position: absolute;
+        left: 8px;
+        top: -55px;
 
         @include responsive(desktop) {
-            @include boxSize(403px, 293px);
-            margin-top: -42px;
-            margin-left: -90px;
+            width: 400px;
+            height: 293px;
+            left: -90px;
+            top: -18px;
         }
     }
 
     &__info {
+        padding: 112px 20px 32px 20px;
+
         @include responsive(desktop) {
-            width: 715px;
-            margin-left: -52px;
+            padding: 0;
+            width: 850px;
+            padding-top: 23px;
+            padding-bottom: 56px;
+            margin-left: 260px;
         }
     }
 
     &__label {
         @include responsive(desktop) {
-            padding-bottom: 16px;
+            padding-bottom: 32px;
         }
     }
 
     &__text-item {
         width: 255px;
-        padding-top: 16px;
         font-size: 24px;
         line-height: 100%;
         color: rgba($black, 0.48);
+        margin-top: 16px;
 
         @include responsive(desktop) {
-            width: 715px;
+            width: 100%;
             font-size: 40px;
+            margin-top: 0;
 
             &:first-child {
-                padding-top: 32px;
+                width: 436px;
+            }
+
+            &:last-child {
+                width: 381px;
             }
         }
     }

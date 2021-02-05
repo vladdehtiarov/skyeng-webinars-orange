@@ -1,7 +1,7 @@
 // Comments section styles
 .comments-section {
     width: 100%;
-    margin-top: 48px;
+    margin-top: 29px;
 
     .section-heading_small {
         font-size: 32px;
@@ -165,7 +165,7 @@
             &_location {
 
                 font-size: 14px;
-                line-height: 18px;
+                line-height: 22px;
                 color: rgba($black, 0.48);
             }
         }
@@ -264,32 +264,45 @@
     .comments-section__comment-item:nth-child(2) {
         order: 2;
         margin-right: 0;
+
+        @include responsive(desktop) {
+            margin-right: -20px;
+            padding-bottom: 62px;
+        }
         
     }
 
     .comments-section__comment-item:last-child {
-        height: auto;
+        // height: auto;
+        width: 320px;
+        height: 208px;
+        margin-top: -36px;
+        margin-left: 10px;
+        padding: 15px 0 0 28px;
         background: $blue_2;
-        border: 12px solid $white;
+        border: 10px solid $white;
         border-radius: 16px;
-        transform: rotate(-5deg);
+        transform: rotate(-10deg);
         order: 1;
         position: relative;
-        padding-bottom: 40px;
         overflow: visible;
         z-index: 10;
-        margin-bottom: 8px;
-        margin-top: -60px;
 
         
 
         @include responsive(desktop) {
+            width: 384px;
+            height: 308px;
             order: 2;
             padding-bottom: 70px;
             margin-top: 0px;
+            border: 12px solid $white;
+            margin-top: -10px;
+            margin-right: -13px;
+            transform: rotate(-5deg);
 
             .comment-item__text { 
-                margin: 0;
+                margin-top: 15px;
             }
         }
 
@@ -297,9 +310,9 @@
             width: 167px;
             height: 104px;
             position: absolute;
-            top: -25px;
-            left: 116px;
-            transform: rotate(10.55deg);
+            top: -18px;
+            left: 126px;
+            transform: rotate(15deg);
 
             @include responsive(desktop) {
                 width: 261px;
@@ -320,6 +333,10 @@
             width: 180px;
             font-size: 24px;
             line-height: 100%;
+            
+            span {
+                letter-spacing: -3px;
+            }
 
             @include responsive(desktop) {
                 width: 300px;

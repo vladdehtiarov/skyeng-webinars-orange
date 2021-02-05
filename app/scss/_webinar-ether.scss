@@ -1,9 +1,9 @@
 // Webinar ether styles
 .webinar-ether {
-    margin-top: 55px;
+    margin-top: 33px;
 
     @include responsive(desktop) {
-        margin-top: 96px;
+        margin-top: 110px;
     }
 
     .webinar-title {
@@ -18,12 +18,10 @@
 
         .emoji {
             margin: -6px -6px -10px -6px;
-        }
-
-        .emoji--only-mobile {
             width: 40px;
             height: 40px;
         }
+
 
         @include responsive(desktop) {
             width: 100%;
@@ -39,12 +37,10 @@
 
             .emoji {
                 margin: -12px -12px -20px -12px;
-            }
-
-            .emoji--only-desctop {
                 width: 80px;
                 height: 80px;
             }
+
         }
     }
 }

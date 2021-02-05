@@ -42,10 +42,21 @@ h2 {
     width: 90%;
     min-width: 300px;
     margin: 0 auto;
+    overflow: hidden;
 
     @include responsive(desktop) {
         width: 90%;
         max-width: 1159px;
+        overflow: visible;
+    }
+}
+
+.container_max-width {
+    // overflow: hidden;
+
+    @include responsive(mobile) {
+        width: 100%;
+        padding: 0 10px;
     }
 }
 

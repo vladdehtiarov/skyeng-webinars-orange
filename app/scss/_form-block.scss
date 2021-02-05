@@ -13,14 +13,22 @@
         display: flex;
         align-items: flex-start;
         justify-content: space-between;
-        padding: 22px 24px 48px 24px;
-        margin-top: 152px;
+        padding: 22px 24px 62px 24px;
+        margin-top: 105px;
     }
 
     .form {
 
         @include responsive(desktop) {
             margin-top: -6px;
+        }
+
+        .form-btn {
+
+            @include responsive(desktop)
+            {
+               margin-top: 12px; 
+            }
         }
     }
     
@@ -82,9 +90,11 @@
     // form
     &__form-wrapper {
         width: 100%;
+        margin-top: 27px;
 
         @include responsive(desktop) { 
             width: 351px;
+            margin-top: 0;
         }
 
         .form-license__text,

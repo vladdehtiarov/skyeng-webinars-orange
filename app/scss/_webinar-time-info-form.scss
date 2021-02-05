@@ -6,20 +6,24 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    margin-top: 62px;
 
     .webinar-time-block {
-        order: 1;
+        order: 0;
     }
 
     .webinar-info-block {
+        margin-top: 32px;
         order: 2;
     }
 
     .webinar-form-block {
-        order: 0;
+        order: 1;
     }
+
     
     @include responsive(desktop) {
+        margin-top: 0;
         display: flex;
         flex-wrap: wrap;
         flex-direction: row;
@@ -31,6 +35,7 @@
         }
     
         .webinar-info-block {
+            margin-top: 0;
             order: 1;
         }
     

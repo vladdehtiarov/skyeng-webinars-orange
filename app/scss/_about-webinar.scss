@@ -5,20 +5,20 @@
     justify-content: space-between;
     align-items: center;
     flex-wrap: wrap;
-    margin-top: 55px;
+    margin-top: 38px;
 
     @include responsive(desktop) {
         flex-direction: row;
-        margin-top: 120px;
+        margin-top: 92px;
     }
 
     &__item {
-        width: 284px;
-        height: 228px;
+        width: 300px;
+        height: 244px;
         margin-top: 32px;
         padding: 14px 12px;
         border-radius: 16px;
-        border: 12px solid $white;
+        border: 8px solid $white;
         background-color: $blue;
         position: relative;
 
@@ -27,6 +27,7 @@
             height: 351px;
             margin-top: 0;
             padding: 32px;
+            border: 12px solid $white;
         }
 
 
@@ -43,8 +44,8 @@
             @include boxSize(164px, 53px);
             @include coverBgImg('../images/stickers/speaker.png');
             position: absolute;
-            top: -50px;
-            left: 90px;
+            top: -54px;
+            left: 102px;
             transform: rotate(-17.07deg);
 
             @include responsive(desktop) {
@@ -60,24 +61,60 @@
     &__item:first-child {
         transform: rotate(10deg);
         margin-bottom: -60px;
+        p {
+            width: 70%;
+        }
 
         @include responsive(desktop) {
-            margin-bottom: 0;
+            margin-bottom: -40px;
             margin-left: -28px;
+            p {
+                width: 100%;
+            }
         }
     }
 
     &__item:nth-child(2) {
+        
+        @include responsive(mobile) {
+            margin-left: 0;
+            height: 250px;
+        }
 
         @include responsive(desktop) {
             margin-left: 20px;
+            margin-bottom: -24px;
         }
     }
 
     &__item:last-child {
+        margin-top: 15px;
+    
+        .about-webinar__item-text {
+            width: 75%;
+            margin-top: 5px;
+
+            @include responsive(desktop) {
+                width: 100%;
+                margin-top: 0;
+            }
+        }
 
         @include responsive(desktop) {
             margin-right: -15px;
+        }
+
+        .emoji {
+            @include responsive(desktop) {
+                margin-left: -10px;
+                margin-top: 2px;
+            }
+        }
+
+        .about-webinar__item-text {
+            @include responsive(desktop) {
+                margin-top: 16px;
+            }
         }
     }
 

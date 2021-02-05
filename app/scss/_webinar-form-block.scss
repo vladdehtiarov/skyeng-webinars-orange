@@ -3,7 +3,7 @@
     display: inline-block;
     width: 300px;
     height: auto;
-    margin-top: 16px;
+    margin-top: 13px;
     padding: 20px;
     padding-bottom: 40px;
     background-color: $purple;
@@ -13,6 +13,7 @@
         width: 400px;
         height: 560px;
         margin-top: 0px;
+        margin-right: -1px;
         padding: 24px;
         padding-bottom: 64px;
     }
@@ -22,8 +23,15 @@
         line-height: 100%;
         color: $white;
 
+        span {
+            display: none;
+        }
+
         @include responsive(desktop) {
             font-size: 40px;
+            span {
+                display: inline-block;
+            }
         }
     }
     

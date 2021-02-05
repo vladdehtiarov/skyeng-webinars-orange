@@ -2,10 +2,10 @@
 // Styles for header
 
 .header {
-    padding: 12px 0 22px 0;
+    padding: 8px 0 30px 0;
     
     @include responsive(desktop) {
-        padding: 50px 0;
+        padding: 36px 0;
     }
 
     .container {

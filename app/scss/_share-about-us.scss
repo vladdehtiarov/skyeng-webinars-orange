@@ -1,7 +1,7 @@
 // share-about-us styles
 
 .share-about-us {
-    margin: 40px 0 37px 0;
+    margin: 46px 0 37px 0;
     font-size: 24px;
     line-height: 120%;
 
@@ -31,7 +31,7 @@
     @include responsive(desktop) {
         width: 644px;
         font-size: 40px;
-        margin-top: 102px;
+        margin-top: 124px;
     }
 
     span {
