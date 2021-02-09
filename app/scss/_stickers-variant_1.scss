@@ -1,0 +1,40 @@
+.sticker-variants {
+    .container {
+        overflow: visible;
+    }
+}
+
+.stickers-variant_1 {
+    .webinar-topic .img-box__image_circle {
+        @include responsive(desktop) {
+            width: 454px;
+            height: 454px;
+        }
+    }
+    .webinar-topic__img-box_circle {
+        @include responsive(desktop) {
+            margin-top: -88px;
+            margin-right: 18px;
+        }
+    }
+}
+
+.stickers-variant_2 {
+    .webinar-topic .img-box__image_rect {
+        @include responsive(desktop) {
+            margin-right: -25px;
+            margin-top: 42px;
+            transform: rotate(-6deg);
+        }
+    }
+}    
+
+.stickers-variant_3 {
+    .webinar-topic .img-box__image_rect {
+        @include responsive(desktop) {
+            margin-right: -25px;
+            margin-top: 42px;
+            transform: rotate(-6deg);
+        }
+    }
+}   

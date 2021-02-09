@@ -7,7 +7,7 @@
     <link rel="stylesheet" href="css/style.min.css">
     <script defer src="js/main.min.js"></script>
 </head>
-<body class="webinar-prev-v1">
+<body class="medium-landing-famous-speaker">
 
     <!-- Header -->
     <header class="header">
@@ -29,10 +29,10 @@
         <div class="container">
             
             <!-- webinar topic -->
-            <section class="webinar-topic">
+            <section class="webinar-topic stickers-variant_0">
                 <h1 class="webinar-topic__title">
                     Что делать, если... домашка заканчивается слезами
-                    <span class="emoji emoji-angry"></span>
+                    <span class="emoji emoji-cry"></span>
                 </h1>
 
                 <div class="webinar-topic__img-box webinar-topic__img-box_circle">
@@ -48,7 +48,13 @@
                         </picture>
                     </div>
 
-                    <div class="img-box__sticker"></div>        
+                    <div class="sticker-variants">
+                        <picture>
+                            <img src="../images/stickers/free-webinar.png"
+                                 srcset="../images/stickers/free-webinar@2x.png 2x,
+                                         ../images/stickers/free-webinar@3x.png 3x" alt="free webinar">
+                        </picture>
+                    </div>        
                 </div>
             </section>
 
@@ -56,43 +62,46 @@
             <section class="webinar-time-info-form">
                 <!-- webinar time -->
                 <div class="webinar-time-block">
-                    Вебинар с психологом о том, как правильно прививать самостоятельность и интерес к учебе
+                    Вебинар с Александрой Александровой<br> пройдет в пятницу 18 сентября в 15:00
                 </div>
 
                 <!-- webinar info -->
-                <div class="webinar-info-block webinar-info-block_speaker">
-                    <div class="webinar-info-block__sticker"></div>
+                <div class="webinar-info-block webinar-info-block_unspeaker">
+                    <!-- <div class="webinar-info-block__sticker"></div> -->
                     <!-- title -->
-                    <h2 class="webinar-title webinar-title_speaker">
-                        <a class="webinar-title__link" href="#">Анастасия Александрова →</a>
+                    <h2 class="webinar-title webinar-title_unspeaker">
+                        <!-- <a class="webinar-title__link" href="#">Анастасия Александрова →</a> -->
+                        <span class="webinar-title__text">Из вебинара вы узнаете</span>
+                        <span class="emoji emoji-book"></span>
+                        <span class="emoji emoji-fire"></span>
                     </h2>
                     <!-- info -->
                     <p class="webinar-info-block__info-items">
-                        блогер, ведущая ютуб-канала, автор очень известной книги. Описание в 2-3 строки
+                        Почему ребенок не хочет учиться самостоятельно
                     </p>
                     <p class="webinar-info-block__info-items">
-                        18 сентября, 15:00
+                        Что делать, когда непонятно как реагировать на слезы
                     </p>
                     <p class="webinar-info-block__info-items">
-                        Подойдет для начинающих и тех, кто просто устал
+                        Почему приходится заставлять и контролировать
                     </p>
                 </div>
 
                 <!-- webinar form -->
                 <div class="webinar-form-block">
-                    <div class="webinar-form-block__title">Записаться на вебинар</div>
+                    <div class="webinar-form-block__title">Записаться<span> на вебинар</span></div>
                     <form class="form">
                         <div class="form__input-wrapper">
                             <input type="text" class="form-name form-input" name="name" required placeholder="Имя">
                             <input type="text" class="form-emal form-input" name="emai" required placeholder="E-mail">
                             <input type="text" class="form-phone form-input" name="phone" required placeholder="Телефон">
-                            <button type="submit" class="form-btn">Участвовать</button>
+                            <button href="#small-dialog" type="submit" class="form-btn">Участвовать</button>
                         </div>
                     </form>
                     <div class="form-error"></div> 
                     <div class="form-license">
                         <div class="form-license__text">
-                            Нажимая, вы принимаете условия
+                            Нажимая, вы принимаете<br>условия
                             <a href="#" class="form-license__link"><span>Соглашения</span> →</a>
                         </div>
                     </div>
@@ -152,7 +161,7 @@
                     <!-- <a class="webinar-title__link" href="#">Анастасия Александрова →</a> -->
                     <span class="webinar-title__text">
                         <span class="webinar-title__inner-text">Во время эфира вы сможете</span>
-                        <span class="emoji emoji-fire"></span>
+                        <span class="emoji emoji-bubble"></span>
                         задать вопросы,
                         <span class="webinar-title__inner-text">
                             <span class="emoji emoji-orange"></span>
@@ -223,7 +232,7 @@
                     <h2 class="section-heading">
                         Отзывы о вебинаре
                         <span class="emoji emoji-heart"></span>
-                        <span class="emoji emoji-heart"></span>
+                        <span class="emoji emoji-bubble"></span>
                     </h2>
                 </div>
                 
@@ -347,7 +356,7 @@
                             <input type="text" class="form-name form-input" name="name" required placeholder="Имя">
                             <input type="text" class="form-emal form-input" name="emai" required placeholder="E-mail">
                             <input type="text" class="form-phone form-input" name="phone" required placeholder="Телефон">
-                            <button type="submit" class="form-btn">Участвовать</button>
+                            <button href="#small-dialog" type="submit" class="form-btn">Участвовать</button>
                         </div>
                     </form>
                     <div class="form-error"></div> 
@@ -381,6 +390,23 @@
 
         <div class="bg-curve bg-curve_top"></div>
         <div class="bg-curve bg-curve_bottom"></div>
+
+        <!-- dialog itself, mfp-hide class is required to make dialog hidden -->
+        <div id="small-dialog" class="zoom-anim-dialog mfp-hide">
+            <div class="popup-text">
+                Напомнить вам о вебинаре? 
+                <span class="emoji emoji-fire"></span>
+            </div>
+            <a href="#" class="popup-tg">
+                <div class="popup-btn">
+                    <svg width="31" height="27" viewBox="0 0 31 27" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M1.81295 11.3933L28.8096 0.984329C30.0626 0.531662 31.1569 1.29 30.7509 3.18466L30.7533 3.18233L26.1566 24.838C25.8159 26.3733 24.9036 26.7467 23.6273 26.0233L16.6273 20.8643L13.2509 24.117C12.8776 24.4903 12.5626 24.8053 11.8393 24.8053L12.3363 17.6817L25.3096 5.96133C25.8743 5.46433 25.1836 5.18433 24.4393 5.679L8.40695 15.773L1.49561 13.617C-0.00472111 13.141 -0.0373874 12.1167 1.81295 11.3933Z" fill="white"/>
+                    </svg>
+                    Telegram
+                </div>
+            </a>                
+        </div>
+
     </main>
     <!-- Main END -->
     
@@ -404,6 +430,25 @@
     </footer>
     <!-- Footer END -->
 
-    
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="../js/jquery.magnific-popup.min.js"></script>
+
+    <script>
+        $('.form-btn').magnificPopup({
+            type: 'inline',
+
+            fixedContentPos: false,
+            fixedBgPos: true,
+
+            overflowY: 'auto',
+
+            closeBtnInside: true,
+            preloader: false,
+            
+            midClick: true,
+            removalDelay: 300,
+            mainClass: 'my-mfp-zoom-in'
+	    });
+    </script>
 </body>
 </html>    

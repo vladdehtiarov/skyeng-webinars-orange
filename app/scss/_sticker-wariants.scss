@@ -1,0 +1,91 @@
+.sticker-variants {
+    width: 100%;
+    position: absolute;
+}
+
+.stickers-variant_0 {
+    width: 300px;
+
+    picture, img {
+        width: inherit;
+    }
+
+    .sticker-variants {
+        width: 318px;
+        top: 110px;
+        left: -12px;
+
+        @include responsive(desktop) {
+            width: 508px;
+            top: 214px;
+            left: -104px;
+        }
+    }
+}
+
+.stickers-variant_1 {
+
+
+    picture, img {
+        width: inherit;
+    }
+
+    .sticker-variants {
+        transform: scale(0.6);
+        top: 150px;
+        left: 43px;
+
+        @include responsive(desktop) {
+            width: 366px;
+            top: 326px;
+            left: 135px;
+            transform: scale(1);
+
+        }
+    }
+}
+
+.stickers-variant_2 {
+
+
+    picture, img {
+        width: inherit;
+    }
+
+    .sticker-variants {
+        transform: scale(0.6);
+        top: 55px;
+        left: 43px;
+
+        @include responsive(desktop) {
+            width: 426px;
+            top: 183px;
+            left: -65px;
+            transform: scale(1);
+
+        }
+    }
+}
+
+
+.stickers-variant_3 {
+
+
+    picture, img {
+        width: inherit;
+    }
+
+    .sticker-variants {
+        transform: scale(0.6);
+        top: 55px;
+        left: 43px;
+
+        @include responsive(desktop) {
+            width: 394px;
+            top: 190px;
+            left: -53px;
+            transform: scale(1);
+
+        }
+    }
+}

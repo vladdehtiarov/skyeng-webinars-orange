@@ -1,0 +1,17 @@
+.past-classic-lending {
+    .form-block__title-sticker {
+        background-image: url(../images/stickers/get-record.png);
+        width: 145px;
+        height: 105px;
+        margin-top: 103px;
+        margin-left: 35px;
+
+        @include responsive(desktop) {
+            width: 380px;
+            height: 318px;
+            margin: 0;
+            margin-left: 50px;
+            margin-bottom: 35px;
+        }
+    }
+}

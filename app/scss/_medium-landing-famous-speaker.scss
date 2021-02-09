@@ -1,0 +1,47 @@
+.medium-landing-famous-speaker {
+    .webinar-time-info-form {
+        .webinar-time-block {
+            @include responsive(mobile) {
+                order: 0;
+            }
+        }
+        
+        .webinar-info-block {
+            @include responsive(mobile) {
+                order: 1;
+            }
+        }
+        
+        .webinar-form-block {
+            @include responsive(mobile) {
+                order: 2;
+            }    
+        }
+    }
+
+    .webinar-topic .img-box__image_circle {
+        @include responsive(mobile) {
+            margin-left: 45px;
+            margin-top: -15px;
+        }
+    }
+
+    .webinar-time-block {
+        @include responsive(mobile) {
+            margin: -11px 0 8px 0;
+        }
+    }
+
+    .webinar-form-block {
+        @include responsive(mobile) {
+            margin-top: 21px;
+        }
+    }
+
+    .about-webinar_speaker {
+
+        @include responsive(desktop) {
+            margin-top: 20px;
+        }
+    }
+}

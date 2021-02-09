@@ -6,6 +6,16 @@
         @include uploadRespEmoji(spoke);
     }
 
+    //cry
+    &.emoji-cry {
+        @include uploadRespEmoji(cry);
+    }
+
+    //bubble
+    &.emoji-bubble {
+        @include uploadRespEmoji(bubble);
+    }
+
     // airplane
     &.emoji-airplane {
         @include uploadRespEmoji(airplane);

@@ -12,6 +12,21 @@
         margin-top: 92px;
     }
 
+    &-label {
+        margin-top: 50px;
+        font-size: 32px;
+        line-height: 100%;
+        letter-spacing: -0.1px;
+        color: #04121B;
+
+        @include responsive(desktop) {
+            margin-top: 105px;
+            margin-left: 25px;
+            font-size: 64px;
+            line-height: 100%;
+        }
+    }
+
     &__item {
         width: 300px;
         height: 244px;
